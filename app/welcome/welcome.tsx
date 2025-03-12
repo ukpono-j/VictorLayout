@@ -27,20 +27,20 @@ export function Welcome() {
           </div>
         </div>
 
-        {/* Stats Section */}
         <div className="flex flex-col lg:flex-row gap-6 md:gap-12 mt-4">
           {/* Left Section */}
-          <div className="flex flex-col sm:flex-row items-center gap-6 w-full">
+          <div className="flex flex-col sm:flex-row items-center gap-6 flex-1">
             <LeftStatistics />
             <RightStatistics />
           </div>
 
           {/* Right Section */}
-          <div className="flex flex-col sm:flex-row items-center gap-6 w-full">
+          <div className="flex flex-col sm:flex-row items-center">
             <Commission />
             <TotalAgentPayout />
           </div>
         </div>
+
 
 
         {/* Monthly Conversion */}
@@ -48,7 +48,7 @@ export function Welcome() {
           <h3 className="text-lg font-bold">Monthly Conversion (2025)</h3>
           <p className="text-gray-600">The overview of volume spent and conversion</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-4">
           <Requests />
           <Conversion />
         </div>
